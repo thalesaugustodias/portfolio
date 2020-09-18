@@ -1,0 +1,439 @@
+/* Formatando a Página do Currículo */
+
+html,
+body {
+    /* resetando as propriedades para dividir a página em dois*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Cor do fundo da index, margem do corpo, automática, font-arial. */
+    background-color: #2b2b2b;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+    color: whitesmoke;
+}
+
+a {
+    /*deixando as listas sem o underline e colocando uma cor*/
+    text-decoration: none;
+    color: #f67300;
+    margin-bottom: 0;
+}
+
+img {
+    /*Definindo o tamanho da imagem e colocando ela flutuando a direita*/
+    width: 30%;
+    float: right;
+}
+
+
+/* Formatando cabeçalho da página */
+
+.cabecalho {
+    /*deixando a barra de navegação responsiva com (100% da tela),colocando a cor de fundo, a cor da letra e o tamanho da altura width: 100%;*/
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    animation-name: navegacao;
+    animation-duration: 3s;
+}
+
+.cabecalho ul {
+    /*definindo a altura, tirando os pontos da lista, tirando o padding (espaçamento interno) alinhando o texto a direita da tela, colocando margem automática*/
+    text-decoration: none;
+    padding: 0;
+    text-align: right;
+    margin: auto;
+}
+
+.cabecalho li {
+    /*definindo o tamanho do espaçamento interno das listas, tamanho da fonte, altura das linhas e colocando-as na mesma linha criando um menu de navegação*/
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 25px;
+    line-height: 50px;
+    display: inline-block;
+}
+
+.cabecalho a:hover {
+    color: black;
+}
+
+.cabecalho li.icon {
+    display: none;
+    color: #f67300;
+}
+
+.cabecalho li.icon:hover {
+    color: black;
+    cursor: pointer;
+}
+
+
+/* Fim formatação do cabeçalho da página */
+
+
+/* Formatando o corpo da página (parte principal onde fica as informações) */
+
+.main {
+    /*Definindo o tamanho da margem da esquerda, colocando a parte do "main" com 75% de espaço total*/
+    margin-left: 180px;
+    width: 75%;
+    animation-name: conteudo;
+    animation-duration: 3s;
+}
+
+.main a {
+    /* colocando um padding de 15px nos links*/
+    padding: 15px;
+    padding-bottom: 20px;
+}
+
+.main ul {
+    /* Colocando a linha, alinhada e bloqueada */
+    display: inline-block;
+}
+
+.main p {
+    /* Formatando os parágrafos, colocando o tamanho, tipo de texto (justificado) altura das linhas, margem de baixo, estilo da fonte e margin de cima. */
+    font-size: 20px;
+    text-align: justify;
+    line-height: 27px;
+    margin-bottom: 30px;
+    font-weight: 100;
+    margin-top: 0px;
+}
+
+.main h1 {
+    /* Colocando a cor do Título, estilo da fonte, margem de baixo, tamanho da fonte, margem de cima. */
+    color: white;
+    font-weight: 300;
+    margin-bottom: 80px;
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+.main h2 {
+    /* Definindo as cores dos H2, colocando uma borda de margem de 1px solida, tamanho da fonte, estilo da fonte, um espaçamente interno(abaixo) e uma margem de baixo. */
+    color: white;
+    border-bottom: 1px solid;
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.main h3 {
+    /* Definindo as cores dos H3 */
+    color: #f27609;
+}
+
+
+/* Fim da formatação do corpo principal da página */
+
+
+/* Formatando o caminho (home > currículo) */
+
+.caminho a {
+    /* Definindo o tamanho da fonte dos links */
+    font-size: 16px;
+}
+
+.caminho ul {
+    /*definindo a altura, tirando os pontos da lista, tirando o padding (espaçamento interno) alinhando o texto a direita da tela, colocando margem automática*/
+    text-decoration: none;
+    padding: 0;
+    text-align: right;
+    margin: auto;
+}
+
+.caminho li {
+    /*definindo o tamanho do espaçamento interno das listas, tamanho da fonte, altura das linhas e colocando-as na mesma linha criando um menu de navegação*/
+    font-size: 16px;
+    line-height: 50px;
+    display: inline-block;
+}
+
+
+/* Fim formatação do caminho */
+
+
+/*Fim da formatação da (página do currículo)*/
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Inicio da formatação da Página de Contato */
+
+
+/* Formatando o título da página */
+
+.contato h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+
+/* Fim formatação do título da página */
+
+
+/* Formantando os ícones das Redes Sociais */
+
+.social {
+    top: 0px;
+    right: 0;
+    margin-bottom: 40px;
+}
+
+.social a {
+    /*Tamanho da imagem*/
+    height: 45px;
+    width: 45px;
+    /*Imagem replacement - utilizado para substituir um texto/link por imagem*/
+    display: inline-block;
+    /*retirando o texto da frente (escondendo)*/
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.social a[href*="linkedin.com/in/thales-augusto-dias-3b03b5199"] {
+    background-image: url(../img/linkedin.png);
+}
+
+.social a[href*="instagram.com"] {
+    background-image: url(../img/instagram.png);
+}
+
+
+/* Fim icones das redes sociais */
+
+
+/* Fim formatação da página de contato */
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Início da formatação da Página do Portfólio */
+
+.portfolio h1 {
+    margin-bottom: 15px;
+}
+
+.portfolio h2 {
+    font-size: 38px;
+    border-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+/* Formatando as imagens */
+
+.miniatura1,
+.miniatura2,
+.miniatura3,
+.miniatura4,
+.miniatura5,
+.miniatura6,
+.miniatura7,
+.miniatura8 {
+    /* Formatando o tamanho das imagens (altura e largura), colocando a imagem pelo css, colocando para não repetir as imagens, colocando as imagens lado a lado em blocos, definindo margem e posição */
+    width: 350px;
+    height: 350px;
+    background-image: url("../img/imagem-ilustrativa.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+
+
+/* Inserindo as imagens da página de portfolio */
+
+.miniatura2 {
+    background-image: url();
+}
+
+.miniatura3 {
+    background-image: url();
+}
+
+.miniatura4 {
+    background-image: url();
+}
+
+.miniatura5 {
+    background-image: url();
+}
+
+.miniatura6 {
+    background-image: url();
+}
+
+.miniatura7 {
+    background-image: url();
+}
+
+.miniatura8 {
+    background-image: url();
+}
+
+
+/* Formantando as legendas da foto, colocando a posição absoluta, cor do fundo, altura e largura do fundo, estilo da fonte, alinhando o texto, altura da linha do texto, opacidade (para esconder o texto e não ficar acima da imagem) colocando efeito de transição (para quando passar o mouse 1s depois aparecer a legenda) */
+
+figcaption {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .9);
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 330px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+/* Colocando efeito para quando passar o mouse em cima das imagens mostrar a legenda (opacidade 1 = 100%) */
+
+figcaption:hover {
+    opacity: 1;
+}
+
+.voltar {
+    /* Formatando o botão no final da página, colocando o display block(para ficar no final da página abaixo das imagens), definindo uma pequna margem, um tamanho da tela de 50px */
+    display: block;
+    margin-left: 8px;
+    width: 50px;
+}
+
+
+/* Fim formatação da Página do Portfólio */
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Formatando a página de trabalhos */
+
+.foto-moc {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* formatando animações no CSS */
+
+@keyframes navegacao {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes conteudo {
+    0% {
+        opacity: 0;
+        transform: translate(-20px, 0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+
+/*fim formatação da animação */
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Formatando o Media Query (Css Responsivo) */
+
+@media (max-width: 1000px) {
+    .cabecalho {
+        background-color: white;
+    }
+    .cabecalho li {
+        display: none;
+    }
+    .cabecalho li.icon {
+        display: inline-block;
+        font-size: 19px;
+        padding-right: 16px;
+    }
+    img {
+        width: 40%;
+        margin-left: 10px;
+    }
+    .main {
+        /*Definindo o tamanho da margem da esquerda, colocando a parte do "main" com 75% de espaço total*/
+        margin-left: 12%;
+        width: 70%;
+        animation-name: conteudo;
+        animation-duration: 3s;
+    }
+    .main h2 {
+        display: block;
+        font-size: 20px;
+    }
+    .main p {
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .main h1 {
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+    .caminho {
+        margin-left: 0;
+        padding: 0;
+    }
+    .caminho a {
+        padding: 0;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .portfolio h2 {
+        font-size: 30px;
+    }
+    .menujs {
+        height: auto;
+    }
+    .menujs li {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+    .menujs ul {
+        height: auto;
+        text-align: center;
+        border-bottom: 1px solid;
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+    .menujs li.icon {
+        padding: 0;
+    }
+}

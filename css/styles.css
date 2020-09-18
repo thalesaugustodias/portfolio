@@ -1,0 +1,338 @@
+html,
+body {
+    /* resetando as propriedades para dividir a página em dois*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Cor do fundo da index, margem do corpo, automática, font-arial. */
+    background-color: #fff;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    /*deixando as listas sem o underline e colocando uma cor*/
+    text-decoration: none;
+    color: #f27609;
+}
+
+img {
+    /*formatando a imagem, deixando ela redonda e com o tamanho desejado, posicionando no local desejado.*/
+    border-radius: 350px;
+    width: 350px;
+    margin-left: 80px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.navigation {
+    /* deixando a barra de navegação responsiva com (100% da tela), colocando a cor de fundo, a cor da letra e o tamanho da altura*/
+    width: 100%;
+    background-color: #2b2b2b;
+    color: white;
+    height: 50px;
+    animation-name: navegacao;
+    animation-duration: 1.5s;
+}
+
+.navigation ul {
+    /*definindo a altura, tirando os pontos da lista, tirando o padding (espaçamento interno) alinhando o texto a direita da tela*/
+    height: 50px;
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+    font: normal;
+}
+
+.navigation li {
+    /*definindo o tamanho do espaçamento interno das listas, tamanho da fonte, altura da fonte, e colocando-as na mesma linha, criando um menu de navegação*/
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 25px;
+    line-height: 50px;
+    display: inline-block;
+}
+
+.navigation a:hover {
+    color: white;
+}
+
+.navigation li.icon {
+    display: none;
+    color: #f27609;
+}
+
+.capa span {
+    /*definindo a cor do span e colocando ele em bloco ao invés de estar, lado a lado. */
+    color: #f27609;
+    display: block;
+}
+
+.capa div {
+    /*colocando o texto alinhado lado a lado e definindo o tamanho da altura da página.*/
+    display: inline-block;
+    height: 480px;
+}
+
+.capa h1,
+h2 {
+    /*definindo a distancia do espaçamente externo das tag h1 e h2 e colocando a font "times new roman". */
+    margin-left: 30px;
+    font-family: 'times new roman';
+}
+
+.capa h1 {
+    /*Resetando o espaçamento externo de cima, definindo o tamanho da font do h1 e resetando a margem de baixo do texto h1*/
+    margin-top: 0px;
+    font-size: 47px;
+    margin-bottom: 0;
+}
+
+.capa h2 {
+    /*tamanho da fonte do h2*/
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.profile-pic {
+    /* definindo o tamanho da divisão das telas em 40% para a imagem.*/
+    width: 40%;
+    animation-name: titulo-capa;
+    animation-duration: 2s;
+}
+
+.profile-title {
+    /*Colocando a posição do texto da div title acima, definindo o tamanho da div em 60% do tamanho da tela.*/
+    vertical-align: top;
+    width: 59%;
+    animation-name: profile-capa;
+    animation-duration: 2s;
+}
+
+.profile-title h1 {
+    /*definindo a margem de cima do titulo "h1". */
+    margin-top: 270px;
+}
+
+.social {
+    top: 0px;
+    right: 0;
+    margin-bottom: 0px;
+}
+
+.social a {
+    /*Tamanho da imagem*/
+    height: 13px;
+    /*Imagem replacement - utilizado para substituir um texto/link por imagem*/
+    display: inline-block;
+    /*retirando o texto da frente (escondendo)*/
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    padding: 32px;
+    margin: 90px;
+    line-height: normal;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.social a[href*="linkedin.com/in/thales-augusto-dias-3b03b5199"] {
+    background-image: url(../img/linkedin.png);
+    margin-left: 120px;
+}
+
+.social a[href*="instagram.com"] {
+    background-image: url(../img/instagram.png);
+    margin-left: 40px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Formantando animações*/
+
+@keyframes profile-capa {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes titulo-capa {
+    0% {
+        opacity: 0;
+        transform: translate(0px, -20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes navegacao {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Fim formatação das animações */
+
+
+/* CSS Responsivo Media Query */
+
+@media (max-width: 960px) {
+    img {
+        width: 40%;
+        margin-left: 150px;
+        margin-top: 0;
+    }
+    .navigation {
+        background-color: white;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation li.icon {
+        display: inline-block;
+        font-size: 19px;
+        padding-right: 16px;
+    }
+    .navigation li.icon:hover {
+        color: black;
+        cursor: pointer;
+    }
+    .capa div {
+        display: block;
+        height: auto;
+    }
+    .profile-pic {
+        width: 100%;
+        animation-name: titulo-capa;
+        animation-duration: 2s;
+    }
+    .profile-title {
+        width: 100%;
+        animation-name: profile-capa;
+        animation-duration: 2s;
+    }
+    .profile-title h1 {
+        /*definindo a margem de cima do titulo "h1". */
+        margin-top: 20px;
+        font-size: 38px;
+        display: block;
+        text-align: center;
+    }
+    .profile-title h2 {
+        /*definindo a margem de cima do titulo "h1". */
+        margin-top: 10px;
+        font-size: 15px;
+        display: block;
+        text-align: center;
+    }
+    .portfolio h2 {
+        font-size: 30px;
+    }
+    .social a[href*="linkedin.com/in/thales-augusto-dias-3b03b5199"] {
+        background-image: url(../img/linkedin2.png);
+        margin-left: 250px;
+        height: 32px;
+        padding: 0;
+        width: 32px;
+    }
+    .social a[href*="instagram.com"] {
+        background-image: url(../img/instagram2.png);
+        margin-top: 0;
+        height: 32px;
+        padding: 0;
+        width: 32px;
+    }
+    @media (min-width: 439px) {
+        .social a[href*="linkedin.com/in/thales-augusto-dias-3b03b5199"] {
+            background-image: url(../img/linkedin2.png);
+            margin-top: 10px;
+            margin: 0;
+            margin-left: 200px;
+            height: 32px;
+            padding: 0;
+            width: 32px;
+        }
+        .social a[href*="instagram.com"] {
+            background-image: url(../img/instagram2.png);
+            margin-top: 0;
+            height: 32px;
+            padding: 0;
+            width: 32px;
+        }
+        @media (min-width: 720px) {
+            .profile-title h1 {
+                /*definindo a margem de cima do titulo "h1". */
+                margin-top: 20px;
+                font-size: 38px;
+                display: block;
+                text-align: center;
+            }
+            .profile-pic {
+                width: 100%;
+                animation-name: titulo-capa;
+                animation-duration: 2s;
+                margin-left: 70px;
+            }
+            .social a[href*="linkedin.com/in/thales-augusto-dias-3b03b5199"] {
+                background-image: url(../img/linkedin2.png);
+                margin-left: 300px;
+                height: 32px;
+                padding: 0;
+                width: 32px;
+            }
+            .social a[href*="instagram.com"] {
+                background-image: url(../img/instagram2.png);
+                margin-top: 0;
+                margin-left: 100px;
+                height: 32px;
+                padding: 0;
+                width: 32px;
+                position: relatives;
+            }
+        }
+    }
+    .menujs {
+        height: auto;
+    }
+    .menujs li {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+    .menujs ul {
+        height: auto;
+        text-align: center;
+        border-bottom: 1px solid;
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+    .menujs li.icon {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+
+/*fim do index*/
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
