@@ -114,6 +114,12 @@ h2 {
 .profile-title h1 {
     /*definindo a margem de cima do titulo "h1". */
     margin-top: 270px;
+    margin-left: 0;
+}
+
+.profile-title h2 {
+    /*definindo a margem de cima do titulo "h1". */
+    margin-left: 150px;
 }
 
 .social {
@@ -139,12 +145,12 @@ h2 {
 
 .social a[href*="linkedin.com/in/thales-augusto-dias-3b03b5199"] {
     background-image: url(../img/linkedin.png);
-    margin-left: 120px;
+    margin-left: 150px;
 }
 
 .social a[href*="instagram.com"] {
     background-image: url(../img/instagram.png);
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 
@@ -196,7 +202,7 @@ h2 {
 @media (max-width: 960px) {
     img {
         width: 40%;
-        margin-left: 150px;
+        margin-left: 110px;
         margin-top: 0;
     }
     .navigation {
@@ -230,6 +236,7 @@ h2 {
     }
     .profile-title h1 {
         /*definindo a margem de cima do titulo "h1". */
+        margin-left: 0;
         margin-top: 20px;
         font-size: 38px;
         display: block;
@@ -237,6 +244,7 @@ h2 {
     }
     .profile-title h2 {
         /*definindo a margem de cima do titulo "h1". */
+        margin-left: 0;
         margin-top: 10px;
         font-size: 15px;
         display: block;
@@ -245,9 +253,16 @@ h2 {
     .portfolio h2 {
         font-size: 30px;
     }
+    .social {
+        top: 0px;
+        right: 0;
+        margin-bottom: 40px;
+        margin-left: 160px;
+    }
     .social a[href*="linkedin.com/in/thales-augusto-dias-3b03b5199"] {
         background-image: url(../img/linkedin2.png);
-        margin-left: 250px;
+        text-align: center;
+        margin: 0;
         height: 32px;
         padding: 0;
         width: 32px;
@@ -260,11 +275,16 @@ h2 {
         width: 32px;
     }
     @media (min-width: 439px) {
+        .social {
+            top: 0px;
+            right: 0;
+            margin-bottom: 40px;
+        }
         .social a[href*="linkedin.com/in/thales-augusto-dias-3b03b5199"] {
             background-image: url(../img/linkedin2.png);
             margin-top: 10px;
             margin: 0;
-            margin-left: 200px;
+            margin-left: 20px;
             height: 32px;
             padding: 0;
             width: 32px;
@@ -290,21 +310,29 @@ h2 {
                 animation-duration: 2s;
                 margin-left: 70px;
             }
+            .social {
+                top: 0px;
+                right: 0;
+                margin-bottom: 40px;
+            }
+            .social a {
+                /*Tamanho da imagem*/
+                height: 45px;
+                width: 45px;
+                /*Imagem replacement - utilizado para substituir um texto/link por imagem*/
+                display: inline-block;
+                /*retirando o texto da frente (escondendo)*/
+                text-indent: -9999px;
+                background-repeat: no-repeat;
+                margin: 0;
+                padding: 10px;
+                margin-right: 10px;
+            }
             .social a[href*="linkedin.com/in/thales-augusto-dias-3b03b5199"] {
-                background-image: url(../img/linkedin2.png);
-                margin-left: 300px;
-                height: 32px;
-                padding: 0;
-                width: 32px;
+                background-image: url(../img/linkedin.png);
             }
             .social a[href*="instagram.com"] {
-                background-image: url(../img/instagram2.png);
-                margin-top: 0;
-                margin-left: 100px;
-                height: 32px;
-                padding: 0;
-                width: 32px;
-                position: relatives;
+                background-image: url(../img/instagram.png);
             }
         }
     }
