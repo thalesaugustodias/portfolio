@@ -398,6 +398,11 @@ figcaption:hover {
         animation-name: conteudo;
         animation-duration: 3s;
     }
+    .main a {
+        padding: 0px;
+        padding-bottom: 39px;
+        margin-top: 30px;
+    }
     .main h2 {
         display: block;
         font-size: 36px;
@@ -483,6 +488,9 @@ figcaption:hover {
     /* Colocando efeito para quando passar o mouse em cima das imagens mostrar a legenda (opacidade 1 = 100%) */
     figcaption:hover {
         opacity: 1;
+    }
+    .social a {
+        padding-left: 20px;
     }
     .menujs {
         height: auto;

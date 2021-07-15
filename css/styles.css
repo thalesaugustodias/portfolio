@@ -101,6 +101,12 @@ h2 {
     width: 40%;
     animation-name: titulo-capa;
     animation-duration: 2s;
+
+    
+}
+.profile-pic img {
+    background-color: black;
+    border: 1px solid #0000;
 }
 
 .profile-title {
@@ -120,6 +126,7 @@ h2 {
 .profile-title h2 {
     /*definindo a margem de cima do titulo "h1". */
     margin-left: 150px;
+    font-size: 25px;
 }
 
 .social {
@@ -246,7 +253,7 @@ h2 {
         /*definindo a margem de cima do titulo "h1". */
         margin-left: 0;
         margin-top: 10px;
-        font-size: 15px;
+        font-size: 25px;
         display: block;
         text-align: center;
     }
@@ -308,7 +315,7 @@ h2 {
                 width: 100%;
                 animation-name: titulo-capa;
                 animation-duration: 2s;
-                margin-left: 70px;
+                margin-left: 120px;
             }
             .social {
                 top: 0px;
@@ -330,9 +337,14 @@ h2 {
             }
             .social a[href*="linkedin.com/in/thales-augusto-dias-3b03b5199"] {
                 background-image: url(../img/linkedin.png);
+                padding: 20px;
+                margin-left: 150px; 
+               
             }
             .social a[href*="instagram.com"] {
                 background-image: url(../img/instagram.png);
+                padding: 20px;
+                
             }
         }
     }
